@@ -5,22 +5,25 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
-project_name = "cnnClassifier"
+project_name = "Speech_to_text"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
-    f"specch_text/{project_name}/__init__.py",
-    f"specch_text/{project_name}/components/__init__.py",
-    f"specch_text/{project_name}/utils/__init__.py",
-    f"specch_text/{project_name}/config/__init__.py",
-    f"specch_text/{project_name}/config/configuration.py",
-    f"specch_text/{project_name}/pipeline/__init__.py",
-    f"specch_text/{project_name}/entity/__init__.py",
-    f"specch_text/{project_name}/constants/__init__.py",
+    f"specch_text_nlp/{project_name}/__init__.py",
+    f"specch_text_nlp/{project_name}/components/__init__.py",
+    f"specch_text_nlp/{project_name}/utils/speech_text.py",
+    f"specch_text_nlp/{project_name}/config/__init__.py",
+    f"specch_text_nlp/{project_name}/utils/specch_text_main.py",
+    f"specch_text_nlp/{project_name}/utils/__init__.py",
+    f"specch_text_nlp/{project_name}/path/text/",
+    f"specch_text_nlp/{project_name}/constants/__init__.py",
     "config/config.yaml",
     "requirements.txt",
     "setup.py",
-    "templates/index.html"
+    "main.py",
+    "app.py",
+    "templates/index.html",
+    "templates/index1.html"
 
 
 ]
