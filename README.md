@@ -87,14 +87,14 @@ We have two notebooks([00. provisioning](./src/engine/00.%20provisioning.ipynb),
 
 ## Provisioning
 
-At first, set up your Azure resource with [the instruction](./src/engine/00.%20provisioning.ipynb), which contains Azure resouce generation, setting python environment, and configuration some datastore to be used in experiencing training notebook.
+At first, set up your resource with , which contains  resouce generation, setting python environment, and configuration some datastore to be used in experiencing training notebook.
 
 ## Preparing some constants and files
 
 In order to analyze audio files, you need to prepare the following files:
 
 - Audio files with `.wav` format
-    - Prepare audio files, which you want to analyze. Then, please upload all of them into `recordings` directory in  `raw` container. This container should be already generated in [here](./src/engine/00.%20provisioning.ipynb).
+    - Prepare audio files, which you want to analyze. Then, please upload all of them into `recordings` directory in  `raw` container. This container should be already generated in ).
 
 - Transcription for each audio file
     - It defines true transcription for audio file, which will be used in measuring the accuracy of Speech-to-Text 
@@ -137,31 +137,31 @@ This part will elaborate the specific use case of positive communication in mini
 
 ## Positive communication
 
-In mining industry, there are a variety of vehicles involved in the normal operations a mining site, ranging from light vehicles to various type of heavy mobile platforms like dump trucks, excavators and loaders. The complicated interactions between the diverse types of vehiles in the complicated mining scenario are potential risk for the safe operation of a mining site. As such, multiple control measures are demanded to mitigate such risk.
+In mining industry, there are a variety of speech involved in the normal operations a mining site, ranging from light vehicles to various platforms like human speech.  .
 
-One of these measures is called positive communications, which means clear and proactive communication with repeated confirmation. The radio communications between vehicle drivers are required to following this positive communication protocol. 
+One of these measures is called positive communications, which means clear and proactive communication with repeated confirmation. The are required to following this positive communication protocol. 
 
-For example, a 50m safety distance around a heavy vehicle is assumed to ensure safety. When another vehicle approaches the 50m safety distance of the heavy vehicle, it needs to initiate a positive communication such as "40 loader, this is 539 dump truck. Permission to pass your left." and wait for the response for the heavy vehicle. After receiving the request, the heavy vehicle is expected to reply in a clear and repeated way such as "539 dump truck. You are clear to pass 40 loader on the left."    
+
 
 ![Positive communication illustration](./documentation/images/positive_communication.PNG)
 
 ## Automated transcribing and compliance classification
 
-The mining companies have the demands to ensure the compliance of the radio communication to this positive communication protocol. Traditionally, there is a human supervisor responsible for monitoring the radio communication and evaluate the trend of compliance manually, which is inefficient and subjective.
+The mining companies have the demands to ensure the compliance of the  communication to this positive communication protocol. Traditionally, there is a human supervisor responsible for monitoring the communication and evaluate the trend of compliance manually, which is inefficient and subjective.
 
-As such, automated monitoring the radio communication and classifying if they are compliant to positive communication or not is highly demanded. 
+As such, automated monitoring the communication and classifying if they are compliant to positive communication or not is highly demanded. 
 
 ## Sample files for mining use case
 
 some customized samples files [sample_files_mining](./sample_files_mining) are provided to illustrate the use case of the accelerator. The sample files in it are explained as follows.
 
 ### Audio files with `.wav` format
-- Prepared audio files, which you want to analyze. Then, please upload all of them into `recordings` directory in  `raw` container. This container should be already generated in [here](./src/engine/00.%20provisioning.ipynb). In this sample, the audio files are just an illustration of positive communication in mining which is not real recording from radio communication in production mining scenario. 
+- Prepared audio files, which you want to analyze. Then, please upload all of them into `recordings` directory in  `raw` container. This container should be already generated in [here](./src/engine/00.%20provisioning.ipynb). In this sample, the audio files are just an illustration of positive communication in mining which recording from human communication in production mining scenario. 
 
 ### Aggregated csv file `transcription-truth.csv`
     It includes the following columns:
 
-- `audio file name`: Names of sample audio files. In this example, the audio file is named by the following format: <No. of conversation>-<start_date: YYMMDD>-<start_time: HHMMSS>-<end_date: YYMMDD>-<end_time: HHMMSS>. 
+- `audio file name`: Names of sample audio files. In this example, the audio file is named by the following format: <No. of conversation>-<start_ 
 - `true transcription`: True transcription for each audio file, which will be used in measuring the accuracy of Speech-to-Text.
 - `Labels for each sample audio file`: Ground-truth of the classifier
     - Y: It is a positive communication and it IS compliant.
@@ -186,16 +186,16 @@ If you would like to try this use case, please follow the instruction in `0.6 Up
 
 # Project Folder Structure
 
-    ├── Speech2Text_NLP             # The main package, including the experiemntation and Azure ML pipelines
+    ├── Speech2Text_NLP             # The main package, including the experiemntation and  ML pipelines
     │   ├── documentation           # Additional documentation descrining the system and any images used
     |   |── sample_files_mining     # Sample files for mining use case
     |   |      |── Audio_files      # The common folder containing any constants decleration
     |   |      |── ontoloy_files    # The main training and inference scripts
-    |   |      |── transcripts-truth# The data ingestion, orchestration and Azure ML training & inference pipelines      
+    |   |      |── transcripts-truth# The data ingestion, orchestration and  ML training & inference pipelines      
     │   |── src                     # Main scripts to perform the experimentation and the required inferences
     |   |      |── common           # The common folder containing any constants decleration
     |   |      |── engine           # The main training and inference scripts
-    |   |      |── pipeline         # The data ingestion, orchestration and Azure ML training & inference pipelines
+    |   |      |── pipeline         # The data ingestion, orchestration and  ML training & inference pipelines
     │   |── CODE_OF_CONDUCT.md
     │   |── CONTRIBUTING.md  
     │   |── LICENSE
@@ -223,14 +223,7 @@ This repository is build in part using the following frameworks:
 
 ## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
+This project welcomes contributions and suggestions.
 
 
 ## Trademarks
