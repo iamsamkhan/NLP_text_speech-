@@ -171,40 +171,14 @@ some customized samples files [sample_files_mining](./sample_files_mining) are p
 ### Vocabulary definition files
 - `general-ontology.json`
     - It defines the frequently used vocabularies in a particular use case, which are used to boost the performance of speech to text transcribing. This file should be organized as following JSON format.
-    ```yaml
-    {   
-        "general" : ["Say again", "understand", "permission", "clear"],
-
-        "orientation" : ["left", "right", "front", "behind"]
-    }
-    ```
+    
     Some words with frequently occurences in positive communications of mining can be selected to use as the general_ontology.
 
-- `homophone-list.txt`
-    - It defines pairs of homophone vocabularies, which are used to correct the results of the original transcriptions in general to be more frequent vocabularies in the specific use case. This file should be organized as the following format.
-    ```yaml
-    [
-        ('is there', 'zero'), 
-        ('stock', 'stop'),
-        ('full', 'four'),
-        ('stick', 'six'),
-        ('project', 'approaching'),
-        ('through', 'two'),
-        ('jerry', 'zero'),
-        ('speaker', 'three two'),
-    ]
-    ```         
+
     The vocabularies are uttered and transcribed but should be replaced with other words in positive communication use case. These vocabulary pairs should be listed here. This file should be organized as the following format.
 
 - `key-phrases-to-search.json`
-    - It defines the key phrases in a specific use case, which will be used for NLP text mining. 
-    ```yaml
-    {   
-        "vehicle_phrases" : ["loader", "dump truck", "excavator", "grader", "crane"],
-
-        "movement_phrases" : ["pass", "halted", "moving", "approaching", "turn", "stopped"]
-    }
-    ```
+   
     The keywords which are beneficial for classifying whether is a positive communication and/or compliant should be provided here for the NLP feature extraction. 
 
 If you would like to try this use case, please follow the instruction in `0.6 Upload those files` in [here](./src/engine/00.%20provisioning.ipynb) to put the sample files in the right locations.
@@ -231,28 +205,13 @@ If you would like to try this use case, please follow the instruction in `0.6 Up
 # Contact
 
 For more details or help deploying, contact the following:
-* [Nejhdeh Ghevondian](neghevo@microsoft.com), Microsoft
-* [Stan Kotlyar](stan.kotlyar@microsoft.com), Microsoft
-* [Michael Keane](michael.keane@microsoft.com), Microsoft
-* [Ben Plummer](benplummer@microsoft.com), Microsoft
-* [Kyoichi Iwasaki](kyiwasak@microsoft.com), Microsoft
-* [Zachary Hou](zacharyhou@microsoft.com), Microsoft
+
 
 
 # Acknowledgements
 
 This repository is build in part using the following frameworks:
-- [python-dotenv](https://pypi.org/project/python-dotenv/)
-- [azure-cognitiveservices-speech](https://pypi.org/project/azure-cognitiveservices-speech/)
-- [upgrade azureml-sdk](https://pypi.org/project/azureml-sdk/)
-- [jiwer](https://pypi.org/project/jiwer/)
-- [nltk](https://pypi.org/project/nltk/)
-- [gensim](https://pypi.org/project/gensim/)
-- [pyldavis](https://pypi.org/project/pyLDAvis/)
-- [enum34](https://pypi.org/project/enum34/)
-- [noisereduce](https://pypi.org/project/noisereduce/)
-- [moviepy](https://pypi.org/project/moviepy/)
-- [mgrs](https://pypi.org/project/mgrs/)
+
 
 
 # Backlogs
@@ -271,14 +230,8 @@ When you submit a pull request, a CLA bot will automatically determine whether y
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
 provided by the bot. You will only need to do this once across all repos using our CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+This project may contain trademarks or logos for projects, products, or services.
