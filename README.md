@@ -1,6 +1,5 @@
 # NLP_text_speech-
 
-# NLP_text_speech-
 
 ![High Level Overview](documentation/images/ds-toolkit-banner.png)
 
