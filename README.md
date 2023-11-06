@@ -1,6 +1,6 @@
 # NLP_text_speech-
 
- ![Uploading SB_SmartFAQ_Diagram_05.2022.gif…]()
+![Uploading SB_SmartFAQ_Diagram_05.2022.gif…]()
 
 
 
