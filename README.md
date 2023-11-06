@@ -218,7 +218,7 @@ This repository is build in part using the following frameworks:
 
 # Backlogs
 
-- Add more detailed NLP techniques in [Training notebook](./src/engine/10.%20training.ipynb).
+- Add more detailed NLP techniques in [Training notebook]().
 - Inferencing notebook.
 - CI/CD pipeline with training/inferencing.
 
