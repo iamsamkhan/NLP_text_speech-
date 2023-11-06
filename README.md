@@ -1,6 +1,7 @@
 # NLP_text_speech-
 
- 
+ ![Uploading SB_SmartFAQ_Diagram_05.2022.gif…]()
+
 
 
 # Speech-to-Text Transcription and Classification
