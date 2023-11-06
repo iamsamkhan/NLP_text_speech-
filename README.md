@@ -1,7 +1,8 @@
 # NLP_text_speech-
 
+![Uploading overview.png…]()
 
-![High Level Overview](documentation/images/ds-toolkit-banner.png)
+
 
 # Speech-to-Text Transcription and Classification Solution Accelerator
 This repository contains the base repository for developing an end-to-end speech transcription and message classification solution for any type of business problem requiring an advanced method for classifying audio messages into actionable meaning. The types of business problem benefitting from this solution include:
