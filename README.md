@@ -1,7 +1,6 @@
 # NLP_text_speech-
 
- ![Uploading overview.png…]()
-
+ 
 
 
 # Speech-to-Text Transcription and Classification Solution Accelerator
@@ -16,7 +15,8 @@ Note that to illustrate the specific use case of positive communication in minin
 
 The diagram below presents the main data flow overview:
 
-![High Level Overview](documentation/images/solution-overview.png)
+![Uploading overview.png…]()
+
 
 # Main features
 
